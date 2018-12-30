@@ -41,18 +41,16 @@ Also, "page not found error" be shown for any invalid url/views, instead of simp
 
 7. We have also explored the concepts of simple Template and reactive forms, which can be used in almost most of the project that has user interactions. Also, we have used the reactive forms without ngModel directive, as per latest Angular 7 deprecations
 
-8. A simple D3.JS v4 chart is also included in the project to highlight on how to include complex SVG based graph rendering along with customization of the user events in the graph like tooltips, highlighting etc.
-
-9. tslint.json file has been customized to disable 'no-inferrable-types', in order to allow declaration and typecasting in same line (eg. test: string = 'This is test variable' instead of test = 'This is test variable')
+8. tslint.json file has been customized to disable 'no-inferrable-types', in order to allow declaration and typecasting in same line (eg. test: string = 'This is test variable' instead of test = 'This is test variable')
    This project is linting compliant and all the standard linting checks has been passed. I encourage you to regularly run 'ng lint' and fix any alerts thrown by linter)
 
-10. All the standard spec files have been updated to give you a hands on experience of configuring Unit test cases.
+9. All the standard spec files have been updated to give you a hands on experience of configuring Unit test cases.
 
-11. All the constants have been moved to a separate constantsService file under shared module. I strongly recommend to put in all your constants, magic numbers and any other repeatable/constant values to this service and inject it in your required components/service as required.
+10. All the constants have been moved to a separate constantsService file under shared module. I strongly recommend to put in all your constants, magic numbers and any other repeatable/constant values to this service and inject it in your required components/service as required.
 
-12. ForkJoin has been used to hide/show loader after all the API calls are completed.
+11. ForkJoin has been used to hide/show loader after all the API calls are completed.
 
-13. A sample template driven and reactive forms has been included along with validators and post submit form reset functionality to get you started with forms as well, based on your requirements.
+12. A sample template driven and reactive forms has been included along with validators and post submit form reset functionality to get you started with forms as well, based on your requirements.
 
 #### Build instructions:
 
@@ -78,13 +76,3 @@ To view code coverage results:
 (Open in a separate terminal as it will start a separate HTTP server process to serve this page.
 After analyzing the result, ensure to kill the process using `Ctrl` + `C` keys combination for this from the terminal you ran the following command.):
 `npm run view-code-coverage`
-
-#### Tips:
-
-1. Disable service worker when working on local/dev environments in angular.json file, so that the browser does not cache files when refreshing/reloading page. (This is already configured in application)
-2. AOT, build optimizer and other such utilities have been turned off for local, in order to encourage better debugging in browser console.
-
-I encourage you to fork this project and create your own custom seed project template based on requirement and also give your feedback to me in terms of future improvement that can be done to this project
-
-Ref:
-https://medium.com/@jeroenouw/upgrade-to-angular-7-beta-within-10-minutes-c14fc380edd
