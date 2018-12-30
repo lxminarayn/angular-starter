@@ -27,17 +27,14 @@ Most of the tips given here are from my personal experience and/or from reading 
 
 3. Relative paths' configuration has been added to tsconfig.json, so that alias for absolute paths can be used instead of relative pathname each time while importing other components
 
-4. Routing has been moved to a separate module, as per the Angular best practice.
+4. Routing has been moved to a separate module, as per the Angular best practice. Also, "page not found error" be shown for any invalid url/views, instead of simply showing up a 404 or bringing user back to homepage.
 
-5. We have also included the concept of Lazy Loading modules in this starter kit by default, as its always prudent to first load the bare minimum set of code for bootstrapping the application and then slowly downloading/adding further modules/features into DOM as the user navigates between views/pages.
 
-In case if your project is small or you are developing a pure mobile oriented hybrid app that also has the constraint of slow network speed, its better to reconsider this approach and network cost might negate the benefit offered by lazy loading modules. In that case, just delete the 'sub-app01' and 'shared' folder contents and you are left with only a single module to proceed.
+5. We have also included the concept of Lazy Loading modules in this starter kit by default, as its always prudent to first load the bare minimum set of code for bootstrapping the application and then slowly downloading/adding further modules/features into DOM as the user navigates between views/pages. In case if your project is small or you are developing a pure mobile oriented hybrid app that also has the constraint of slow network speed, its better to reconsider this approach and network cost might negate the benefit offered by lazy loading modules. In that case, just delete the 'sub-app01' and 'shared' folder contents and you are left with only a single module to proceed.
 
 6. Planned future updates:
    - D3 charts
    - Auth Guard
-
-Also, "page not found error" be shown for any invalid url/views, instead of simply showing up a 404 or bringing user back to homepage.
 
 7. We have also explored the concepts of simple Template and reactive forms, which can be used in almost most of the project that has user interactions. Also, we have used the reactive forms without ngModel directive, as per latest Angular 7 deprecations
 
@@ -55,16 +52,16 @@ Also, "page not found error" be shown for any invalid url/views, instead of simp
 #### Build instructions:
 
 To run the application in your local system : (any of the commands, based on your preference to test)
-`ng serve --o --configuration=localhost`
-`ng serve --o --configuration=dev`
-`ng serve --o --configuration=stage`
-`ng serve --o --configuration=production`
+`ng serve --o --configuration=localhost`  
+`ng serve --o --configuration=dev`  
+`ng serve --o --configuration=stage`  
+`ng serve --o --configuration=production`  
 
 To build the application before deploying to any application server : (any of the commands, based on your preference to test)
-`ng build --prod --configuration=production`
-`ng build --prod --configuration=stage`
-`ng build --prod --configuration=dev`
-`ng build --prod --configuration=localhost`
+`ng build --prod --configuration=production`  
+`ng build --prod --configuration=stage`  
+`ng build --prod --configuration=dev`  
+`ng build --prod --configuration=localhost`  
 
 To run unit test cases:
 `npm run test`
