@@ -51,7 +51,7 @@ Most of the tips given here are from my personal experience and/or from reading 
 
 #### Build instructions:
 
-To run the application in your local system : (any of the commands, based on your preference to test)
+To run the application in your local system : (any of the commands, based on your preference to test)  
 `ng serve --o --configuration=localhost`  
 `ng serve --o --configuration=dev`  
 `ng serve --o --configuration=stage`  
