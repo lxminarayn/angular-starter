@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+// To make SCSS default, add the .scss file to the angular.json file and also include 'stylePreprocessorOptions' to include the default path
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/print";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities";
+
+
+$bg-color: #eff7ff;
+$font-body-color:#000000;
+
+
+@mixin logo-image-dimension {
+    width:5%;
+    height:5%;
+
+}
+
+
+@mixin header-text {
+    color:#dc143c;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+@mixin flex {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.parent-div {
+    padding-top: 5%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100vh;
+    color:black;
+}
+
+// You can variables number of arguments here, hence we are using the spread operator here
+@mixin padding($values...) {    
+    @each $var in $values {
+        padding: #{$var};
+    }
+}
+
+
+// Apply styles based on specific condition.
+@mixin grid($flex) {
+    @if $flex {
+        @include flex;
+    } @else {
+        display: block;
+    }
+}
+
+
+ body{
+    //@include padding(1%)
+    padding: 0 0;
+} 
+
+.center-page{
+margin:0 auto;
+}
+
+.left-padding {
+    padding-left: 5px;
+}

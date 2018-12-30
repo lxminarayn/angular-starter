@@ -1,0 +1,9 @@
+https://medium.com/voobans-tech-stories/multiple-environments-with-angular-and-docker-2512e342ab5a
+
+https://theinfogrid.com/tech/developers/angular/environment-variables-angular/
+
+https://scotch.io/tutorials/how-to-use-sass-mixins
+
+https://front-end-development.net/beginners-guide-sass-basics/
+
+https://angular.io/guide/architecture

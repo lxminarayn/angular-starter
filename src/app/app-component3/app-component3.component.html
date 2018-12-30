@@ -1,0 +1,26 @@
+<div class="parent-div">
+  <div class="text-center">
+    <h3>
+      This navigation also does not change the url, though you are navigating
+      between different views.
+    </h3>
+    <h4>
+      Below is a demo of virtual scroll feature of Angular that you might like!
+    </h4>
+    <ul class="list">
+      <cdk-virtual-scroll-viewport style="height: 150px" itemSize="90">
+        <ng-container *cdkVirtualFor="let i of commentsData">
+          <li class="commentBlock">
+            <div>
+              <div><b>Name:</b> {{ i.name }}</div>
+              <div><b>Comments: </b>{{ i.body }}</div>
+            </div>
+          </li>
+        </ng-container>
+      </cdk-virtual-scroll-viewport>
+    </ul>
+    <button class="btn btn-info" (click)="continueFn('appcomp3')">
+      Continue
+    </button>
+  </div>
+</div>

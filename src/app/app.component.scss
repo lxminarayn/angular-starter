@@ -1,0 +1,21 @@
+.alert-note{
+    height: 0;
+    overflow: hidden;
+   animation: slide 5s linear;
+   text-align: center;
+}
+
+@keyframes slide {
+0%{
+    height:0;
+}
+10%{
+    height:24px;
+}
+90%{
+    height:24px;
+}
+100%{
+    height:0;
+}
+}

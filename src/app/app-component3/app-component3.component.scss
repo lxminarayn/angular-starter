@@ -1,0 +1,15 @@
+.parent-div {
+  background: url('../../assets/img/full-page-background.jpg') no-repeat center
+    center fixed;
+}
+
+.commentBlock {
+  text-align: left;
+}
+.commentBlock:nth-child(odd) {
+  background: linen;
+}
+
+.commentBlock:nth-child(even) {
+  background: lemonchiffon;
+}

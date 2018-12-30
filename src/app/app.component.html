@@ -1,0 +1,64 @@
+<!--
+  This a static notification alert div. Can be made into a separate component, if required.
+-->
+<div class="alert-warning alert-note" role="alert">
+  {{ notificationMessage }}
+</div>
+
+<!-- The content below is only a placeholder and can be replaced. -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Angular Starter Project</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbar-primary"
+    aria-controls="navbarColor01"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse"
+    id="navbar-primary"
+    style="float: right"
+  >
+    <ul class="navbar-nav mr-auto">
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target="#navbar-primary.show"
+      >
+        <a class="nav-link" routerLink="/"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target="#navbar-primary.show"
+      >
+        <a class="nav-link" routerLink="/features">Features</a>
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target="#navbar-primary.show"
+      >
+        <a class="nav-link" routerLink="/todos">To Dos</a>
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target="#navbar-primary.show"
+      >
+        <a class="nav-link" routerLink="/aboutus">About Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+<app-loader></app-loader>
