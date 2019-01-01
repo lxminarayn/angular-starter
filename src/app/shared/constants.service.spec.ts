@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { ConstantsService } from './constants.service';
 
-import {APP_BASE_HREF} from '@angular/common';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from '../app.component';
@@ -16,28 +16,31 @@ import { AppComponent5Component } from '../app-component5/app-component5.compone
 import { FeaturesModuleModule } from '../features-module/features-module.module';
 import { TodosModule } from '../todos/todos.module';
 import { NotFoundComponent } from '../not-found/not-found.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 describe('ConstantsService', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    declarations: [
-      AppComponent,
-      AppComponent1Component,
-      AppComponent2Component,
-      AppComponent3Component,
-      AppComponent4Component,
-      AppComponent5Component,
-      NotFoundComponent
-    ],
-    imports: [
-      BrowserModule,
-      AppRoutingModule,
-      SharedModule.forRoot(),
-      FeaturesModuleModule,
-      TodosModule
-    ],
-    providers: [{provide: APP_BASE_HREF, useValue : '/' }]
-
-  }));
+  beforeEach(() =>
+    TestBed.configureTestingModule({
+      declarations: [
+        AppComponent,
+        AppComponent1Component,
+        AppComponent2Component,
+        AppComponent3Component,
+        AppComponent4Component,
+        AppComponent5Component,
+        NotFoundComponent
+      ],
+      imports: [
+        BrowserModule,
+        AppRoutingModule,
+        SharedModule.forRoot(),
+        FeaturesModuleModule,
+        TodosModule,
+        ScrollingModule
+      ],
+      providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
+    })
+  );
 
   it('should be created', () => {
     const service: ConstantsService = TestBed.get(ConstantsService);

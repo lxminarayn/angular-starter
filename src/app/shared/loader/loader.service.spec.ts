@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { LoaderService } from './loader.service';
@@ -36,10 +37,12 @@ describe('LoaderService', () => {
         SharedModule.forRoot(),
         FeaturesModuleModule,
         TodosModule,
-        HttpClientModule
+        HttpClientModule,
+        ScrollingModule
       ],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
-    }));
+    })
+  );
 
   it('should be created', () => {
     const service: LoaderService = TestBed.get(LoaderService);

@@ -2,7 +2,6 @@ import { TestBed } from '@angular/core/testing';
 import { APP_BASE_HREF } from '@angular/common';
 import { ApiCallsService } from './api-calls.service';
 import { HttpClientModule } from '@angular/common/http';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from '../app.component';
 
@@ -16,6 +15,7 @@ import { AppComponent5Component } from '@app/app-component5/app-component5.compo
 import { FeaturesModuleModule } from '@app/features-module/features-module.module';
 import { TodosModule } from '@app/todos/todos.module';
 import { NotFoundComponent } from '@app/not-found/not-found.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 describe('ApiCallsService', () => {
   beforeEach(() =>
@@ -35,10 +35,12 @@ describe('ApiCallsService', () => {
         SharedModule.forRoot(),
         FeaturesModuleModule,
         TodosModule,
-        HttpClientModule
+        HttpClientModule,
+        ScrollingModule
       ],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
-    }));
+    })
+  );
 
   it('should be created', () => {
     const service: ApiCallsService = TestBed.get(ApiCallsService);
