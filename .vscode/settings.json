@@ -1,0 +1,9 @@
+{
+  "editor.formatOnType": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 1,
+  "git.autofetch": true,
+  "editor.wordWrap": "on"
+}
