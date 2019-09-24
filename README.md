@@ -63,6 +63,8 @@ To build the application before deploying to any application server : (any of th
 `ng build --prod --configuration=dev`  
 `ng build --prod --configuration=localhost`
 
+The output will be generated under `releases` directory inside the project.
+
 To run unit test cases:
 `npm run test`
 
