@@ -1,6 +1,6 @@
 # NgStarterKit (Production / Enterprise ready Angular seed project)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6 and customized to include most of the commonly used Angular features and concepts to leapfrog initial development efforts.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8 and customized to include most of the commonly used Angular features and concepts to leapfrog initial development efforts.
 
 This project is also expected to work with future Angular releases, unless any breaking changes are introduced by Angular team in any of the libraries or associated functionalities. This project started off with Angular 6 and got migrated to Angular 7 in between.
 
