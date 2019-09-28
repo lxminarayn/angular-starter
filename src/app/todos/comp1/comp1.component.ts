@@ -33,9 +33,10 @@ export class Comp1Component implements OnInit {
   }
 
   onSubmit(formDirective: FormGroupDirective) {
-    this.submitted = false;
+    this.submitted = true;
     // stop here if form is invalid
     if (this.registerForm.invalid) {
+      console.log(this.registerForm);
       return;
     }
     this.registerForm.reset();

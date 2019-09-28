@@ -15,18 +15,11 @@
               formControlName="firstName"
               class="form-control"
               [ngClass]="{
-                'is-invalid':
-                  f.firstName.invalid &&
-                  (f.firstName.dirty || f.firstName.touched) &&
-                  submitted
+                'is-invalid': f.firstName.errors && submitted
               }"
             />
             <div
-              *ngIf="
-                f.firstName.invalid &&
-                (f.firstName.dirty || f.firstName.touched) &&
-                submitted
-              "
+              *ngIf="f.firstName.errors && submitted"
               class="invalid-feedback"
             >
               <div *ngIf="f.firstName.errors.required">
@@ -41,18 +34,11 @@
               formControlName="lastName"
               class="form-control"
               [ngClass]="{
-                'is-invalid':
-                  f.lastName.invalid &&
-                  (f.lastName.dirty || f.lastName.touched) &&
-                  submitted
+                'is-invalid': f.lastName.errors && submitted
               }"
             />
             <div
-              *ngIf="
-                f.lastName.invalid &&
-                (f.lastName.dirty || f.lastName.touched) &&
-                submitted
-              "
+              *ngIf="f.lastName.errors && submitted"
               class="invalid-feedback"
             >
               <div *ngIf="f.lastName.errors.required">
@@ -67,10 +53,7 @@
               formControlName="email"
               class="form-control"
               [ngClass]="{
-                'is-invalid':
-                  f.email.invalid &&
-                  (f.email.dirty || f.email.touched) &&
-                  submitted
+                'is-invalid': f.email.errors && submitted
               }"
             />
             <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
@@ -87,10 +70,7 @@
               formControlName="password"
               class="form-control"
               [ngClass]="{
-                'is-invalid':
-                  f.password.invalid &&
-                  (f.password.dirty || f.password.touched) &&
-                  submitted
+                'is-invalid': f.password.errors && submitted
               }"
             />
             <div
